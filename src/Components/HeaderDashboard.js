@@ -4,7 +4,7 @@ import "../styles/header_dashboard.css";
 function HeaderDashboard() {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(
-    window.innerHeight < 820 ? "4rem" : "6rem"
+    window.innerWidth < 820 ? "6rem" : "4rem"
   );
   const handleResponsiveness = () => {
     if (window.innerWidth < 820) {
