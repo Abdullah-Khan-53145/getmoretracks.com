@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Cross as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom";
 import "../styles/header_dashboard.css";
-function HeaderDashboard() {
+function HeaderDashboard({ path }) {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(
     window.innerWidth < 820 ? "48px" : "4rem"
@@ -15,6 +16,7 @@ function HeaderDashboard() {
     }
   };
   useEffect(() => {
+    console.log(path);
     window.addEventListener("resize", handleResponsiveness);
   }, []);
   return (
@@ -33,7 +35,14 @@ function HeaderDashboard() {
         </h2>
         <ul>
           <li>
-            <a>
+            <Link
+              to="/dashboard/home"
+              style={{
+                borderBottom: path === "home" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,10 +60,18 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">Search tracks</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/used-tracking"
+              style={{
+                borderBottom:
+                  path === "used-tracking" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +89,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">My used tracking</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/packages"
+              style={{
+                borderBottom: path === "packages" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,10 +117,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">Buy a plan</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/tutorials"
+              style={{
+                borderBottom: path === "tutorials" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,10 +145,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">Tutorials</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/top-geo"
+              style={{
+                borderBottom: path === "top-geo" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -140,10 +178,18 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">TOP geo</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/contact-us"
+              style={{
+                borderBottom:
+                  path === "contact-us" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,10 +207,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">Contact us</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/api"
+              style={{
+                borderBottom: path === "api" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,10 +235,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">API</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/app"
+              style={{
+                borderBottom: path === "app" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -203,10 +263,17 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">Extension/Apps</div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/dashboard/settings"
+              style={{
+                borderBottom: path === "settings" ? "1px solid white" : "none",
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +296,7 @@ function HeaderDashboard() {
                 </svg>
               </div>
               <div className="text">account settings</div>
-            </a>
+            </Link>
           </li>
         </ul>
         <p>

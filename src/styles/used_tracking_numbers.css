@@ -1,0 +1,76 @@
+.used__tracking__number__main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.used__tracking__number__mid {
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.used__tracking__number__mid button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.count_tracking_form_bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+.filter__input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.filters__check__box,
+.count_tracking_inputs {
+  display: flex;
+  gap: 1rem;
+}
+.used__tracking__number__mid button:hover {
+  background-color: rgb(76, 24, 126);
+}
+.date__input input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 15rem;
+}
+.date__input {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.2rem;
+}
+.count_tracking_form {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 960px) {
+  .count_tracking_form_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 620px) {
+  .count_tracking_inputs,
+  .count_tracking_form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .count_tracking_inputs input,
+  .count_tracking_form input {
+    width: 100%;
+  }
+}

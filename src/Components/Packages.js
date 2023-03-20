@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Numeral from "react-numeral";
 import "../styles/packages.css";
-function Packages() {
+function Packages({ path }) {
   const [balance, setBalance] = useState(0);
   const packages = [
     {
@@ -33,10 +33,15 @@ function Packages() {
       tracks: 10000,
     },
   ];
+  const user = {
+    email: "hello@rubbme.com",
+  };
   return (
     <div className="packages__main">
       <div className="packages_top_info">
-        <h1>Make a Payment</h1>
+        <h1>
+          {path === "home" ? "Make a Payment" : `Buy access for ${user.email}`}
+        </h1>
         <h2>
           Balance:{" "}
           {balance ? <Numeral value={balance} format={"$0,0.00"} /> : "$0"}

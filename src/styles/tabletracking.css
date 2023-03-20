@@ -1,0 +1,46 @@
+.table__tracking {
+  width: 100%;
+}
+
+@media (min-width: 641px) {
+  .table__tracking {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .table__tracking th {
+    background-color: rgb(244, 233, 255);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-right: 1px solid lightgray;
+  }
+
+  .table__tracking td {
+    padding: 10px;
+    border-right: 1px solid lightgray;
+  }
+  .table__tracking th:nth-child(1),
+  .table__tracking td:nth-child(1) {
+    border-left: 1px solid lightgray;
+    /* other cell styles */
+  }
+
+  .table__tracking tbody td:last-child span {
+    background-color: green;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    border-radius: 0.2rem;
+  }
+
+  .table__tracking td {
+    border-bottom: 1px solid lightgray;
+  }
+  .table__tracking tr:hover {
+    background-color: rgb(244, 233, 255);
+  }
+}
