@@ -1,0 +1,141 @@
+.packages__main {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.packages_top_info {
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+.packages_top_info ul li {
+  margin-left: 1.2rem;
+}
+.packages_top_info .add__balance {
+  display: flex;
+  gap: 0.5rem;
+}
+.packages_top_info .add__balance input {
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+}
+.packages_top_info img {
+  width: 15rem;
+}
+.packages_top_info .add__balance input {
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+}
+.packages_top_info .add__balance button {
+  background-color: blueviolet;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+.packages_top_info .add__balance button:hover {
+  background-color: rgb(76, 23, 124);
+}
+.all_packages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.package_card,
+.package__request {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 4rem;
+}
+.package__request {
+  justify-content: center;
+  align-items: center;
+}
+.package__request h3 a {
+  color: rgb(59, 19, 97);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.package__request h3 a:hover {
+  color: rgb(151, 48, 255);
+  text-decoration: underline;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.buttons img {
+  width: 7rem;
+}
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
+}
+.buttons button:nth-child(1) {
+  background-color: yellow;
+}
+.buttons button:nth-child(1):hover {
+  background-color: rgb(211, 211, 0);
+}
+.buttons button:nth-child(2) {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.buttons button:nth-child(2):hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.buttons button:nth-child(3) {
+  background-color: blueviolet;
+  color: white;
+}
+.buttons button:nth-child(3):hover {
+  background-color: rgb(76, 23, 124);
+  color: white;
+}
+.buttons svg {
+  width: 2rem;
+}
+.policycheck,
+.policycheck label {
+  display: flex;
+  gap: 0.2rem;
+}
+@media (max-width: 1040px) {
+  .all_packages {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .all_packages {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 320px) {
+  .all_packages {
+    grid-template-columns: 1fr;
+  }
+}

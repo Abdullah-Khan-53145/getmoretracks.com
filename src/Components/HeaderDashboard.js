@@ -22,7 +22,7 @@ function HeaderDashboard() {
       <div
         className="menu_top"
         style={{
-          height: `${isOpen ? "39.3rem" : height}`,
+          height: `${isOpen ? "42rem" : height}`,
         }}
       >
         <h2>
@@ -259,7 +259,7 @@ function HeaderDashboard() {
           </li>
           <li className="blur_items">
             <a>
-              <div className="text">Trackiang: No</div>
+              <div className="text">Tracking: No</div>
             </a>
           </li>
         </ul>

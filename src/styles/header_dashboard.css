@@ -112,7 +112,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
     width: 100%;
   }
   .menu_top h2 div:nth-child(2) {
