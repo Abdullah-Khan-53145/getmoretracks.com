@@ -8,6 +8,7 @@ import TopGeo from "../Components/TopGeo";
 import ContactUs from "../Components/ContactUs";
 import APIComponenet from "../Components/APIComponenet";
 import Extension from "../Components/Extension";
+import AccountSetting from "../Components/AccountSetting";
 function Dashboard() {
   const { path } = useParams();
   return (
@@ -24,6 +25,7 @@ function Dashboard() {
       {path === "contact-us" && <ContactUs />}
       {path === "api" && <APIComponenet />}
       {path === "app" && <Extension />}
+      {path === "settings" && <AccountSetting />}
     </div>
   );
 }
