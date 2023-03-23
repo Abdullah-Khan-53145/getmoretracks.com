@@ -24,7 +24,7 @@ function HeaderDashboard({ path }) {
       <div
         className="menu_top"
         style={{
-          height: `${isOpen ? "48rem" : height}`,
+          height: `${isOpen ? "49rem" : height}`,
         }}
       >
         <h2>

@@ -2,7 +2,7 @@
   width: 100%;
   padding: 1.5rem;
   display: flex;
-  padding-left: 17rem;
+  padding-left: 20rem;
   padding-top: 4rem;
   flex-direction: column;
   gap: 1.5rem;
@@ -15,6 +15,16 @@
   gap: 1rem;
   padding: 1.5rem;
   background-color: white;
+}
+.__info__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.__info__header > h2 {
+  color: rgb(87, 87, 175);
+  font-weight: 400;
 }
 .packages_top_info ul li {
   margin-left: 1.2rem;
@@ -51,6 +61,7 @@
 }
 .all_packages {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
@@ -61,7 +72,7 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  padding: 4rem;
+  padding: 3rem;
   background-color: white;
 }
 .package__request {

@@ -39,13 +39,17 @@ function Packages({ path }) {
   return (
     <div className="packages__main">
       <div className="packages_top_info">
-        <h1>
-          {path === "home" ? "Make a Payment" : `Buy access for ${user.email}`}
-        </h1>
-        <h2>
-          Balance:{" "}
-          {balance ? <Numeral value={balance} format={"$0,0.00"} /> : "$0"}
-        </h2>
+        <div className="__info__header">
+          <h1>
+            {path === "home"
+              ? "Make a Payment"
+              : `Buy access for ${user.email}`}
+          </h1>
+          <h2>
+            Balance:{" "}
+            {balance ? <Numeral value={balance} format={"$0,0.00"} /> : "$0"}
+          </h2>
+        </div>
         <div className="policycheck">
           <input type="checkbox" name="policy" id="policy" />
           <label htmlFor="policy">

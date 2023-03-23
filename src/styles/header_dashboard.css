@@ -38,7 +38,7 @@
   list-style: none;
 }
 .menu_top h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .menu_top ul {
@@ -58,7 +58,7 @@
 .menu_top ul li a {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.7rem 1.5rem;
   border-radius: 0.5rem;
   gap: 1rem;
@@ -69,8 +69,8 @@
 }
 
 .menu_top ul li a svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   color: black;
 }
 .menu_top ul li a .icon {
@@ -101,7 +101,11 @@
     position: static;
     transition: height 0.6s;
   }
+  .menu_bottom {
+    position: static;
 
+    background-color: white;
+  }
   .hamburger-react div {
     left: 2px;
     padding: 0;
