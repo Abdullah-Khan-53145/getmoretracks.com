@@ -9,7 +9,7 @@
   }
 
   .table__tracking th {
-    background-color: rgb(244, 233, 255);
+    background-color: rgb(166, 166, 255);
     padding: 10px;
     text-align: left;
     font-weight: bold;
@@ -23,7 +23,6 @@
   .table__tracking th:nth-child(1),
   .table__tracking td:nth-child(1) {
     border-left: 1px solid lightgray;
-    /* other cell styles */
   }
 
   .table__tracking tbody td:last-child span {
@@ -41,6 +40,6 @@
     border-bottom: 1px solid lightgray;
   }
   .table__tracking tr:hover {
-    background-color: rgb(244, 233, 255);
+    background-color: rgb(195, 195, 255);
   }
 }

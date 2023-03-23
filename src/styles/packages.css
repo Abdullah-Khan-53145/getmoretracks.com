@@ -2,6 +2,8 @@
   width: 100%;
   padding: 1.5rem;
   display: flex;
+  padding-left: 17rem;
+  padding-top: 4rem;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -11,13 +13,15 @@
   flex-direction: column;
   align-items: start;
   gap: 1rem;
-  border-bottom: 1px solid rgb(190, 190, 190);
+  padding: 1.5rem;
+  background-color: white;
 }
 .packages_top_info ul li {
   margin-left: 1.2rem;
 }
 .packages_top_info .add__balance {
   display: flex;
+
   gap: 0.5rem;
 }
 .packages_top_info .add__balance input {
@@ -34,7 +38,7 @@
   font-size: 1rem;
 }
 .packages_top_info .add__balance button {
-  background-color: blueviolet;
+  background-color: rgb(87, 87, 175);
   padding: 0 0.5rem;
   font-size: 1rem;
   border: none;
@@ -43,7 +47,7 @@
   transition: background 0.3s;
 }
 .packages_top_info .add__balance button:hover {
-  background-color: rgb(76, 23, 124);
+  background-color: rgb(114, 114, 226);
 }
 .all_packages {
   display: grid;
@@ -58,19 +62,20 @@
   gap: 0.5rem;
   align-items: center;
   padding: 4rem;
+  background-color: white;
 }
 .package__request {
   justify-content: center;
   align-items: center;
 }
 .package__request h3 a {
-  color: rgb(59, 19, 97);
+  color: rgb(87, 87, 175);
   font-size: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
 .package__request h3 a:hover {
-  color: rgb(151, 48, 255);
+  color: rgb(114, 114, 226);
   text-decoration: underline;
 }
 .buttons {
@@ -109,11 +114,11 @@
   color: white;
 }
 .buttons button:nth-child(3) {
-  background-color: blueviolet;
+  background-color: rgb(87, 87, 175);
   color: white;
 }
 .buttons button:nth-child(3):hover {
-  background-color: rgb(76, 23, 124);
+  background-color: rgb(114, 114, 226);
   color: white;
 }
 .buttons svg {
@@ -124,14 +129,18 @@
   display: flex;
   gap: 0.2rem;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1440px) {
   .all_packages {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   .all_packages {
     grid-template-columns: 1fr 1fr;
+  }
+  .packages__main {
+    padding-left: 1.5rem;
+    padding-top: 3.5rem;
   }
 }
 @media (max-width: 320px) {

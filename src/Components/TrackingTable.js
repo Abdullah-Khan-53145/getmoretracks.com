@@ -133,10 +133,3 @@ function TrackingTable() {
 }
 
 export default TrackingTable;
-// trackingNumber: "92055901755477300096779681",
-// note: "—",
-// dateOfUse: "8 Mar, 2023",
-// expectedDeliveryDate: "3 Mar, 2023",
-// newExpectedDeliveryDate: "without changes",
-// difference: "On time",
-// status: "Delivered 3 Mar, 2023",

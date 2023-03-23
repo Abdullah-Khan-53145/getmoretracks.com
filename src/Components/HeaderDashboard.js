@@ -5,14 +5,14 @@ import "../styles/header_dashboard.css";
 function HeaderDashboard({ path }) {
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(
-    window.innerWidth < 820 ? "48px" : "4rem"
+    window.innerWidth < 820 ? "48px" : "100vh"
   );
   const handleResponsiveness = () => {
     if (window.innerWidth < 820) {
       setHeight("48px");
     } else {
       setIsOpen(false);
-      setHeight("4rem");
+      setHeight("100vh");
     }
   };
   useEffect(() => {
@@ -24,7 +24,7 @@ function HeaderDashboard({ path }) {
       <div
         className="menu_top"
         style={{
-          height: `${isOpen ? "42rem" : height}`,
+          height: `${isOpen ? "48rem" : height}`,
         }}
       >
         <h2>
@@ -38,7 +38,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/home"
               style={{
-                borderBottom: path === "home" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "home" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -66,8 +67,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/used-tracking"
               style={{
-                borderBottom:
-                  path === "used-tracking" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "used-tracking" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -95,7 +96,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/packages"
               style={{
-                borderBottom: path === "packages" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "packages" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -123,7 +125,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/tutorials"
               style={{
-                borderBottom: path === "tutorials" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "tutorials" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -151,7 +154,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/top-geo"
               style={{
-                borderBottom: path === "top-geo" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "top-geo" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -184,8 +188,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/contact-us"
               style={{
-                borderBottom:
-                  path === "contact-us" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "contact-us" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -213,7 +217,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/api"
               style={{
-                borderBottom: path === "api" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "api" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -241,7 +246,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/app"
               style={{
-                borderBottom: path === "app" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "app" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
@@ -269,7 +275,8 @@ function HeaderDashboard({ path }) {
             <Link
               to="/dashboard/settings"
               style={{
-                borderBottom: path === "settings" ? "1px solid white" : "none",
+                backgroundColor:
+                  path === "settings" ? "rgb(213, 213, 248)" : "white",
                 textDecoration: "none",
                 color: "white",
               }}
