@@ -9,6 +9,7 @@ import ContactUs from "../Components/ContactUs";
 import APIComponenet from "../Components/APIComponenet";
 import Extension from "../Components/Extension";
 import AccountSetting from "../Components/AccountSetting";
+import FindTrack from "../Components/FindTrack";
 function Dashboard() {
   const { path } = useParams();
   return (
@@ -17,7 +18,7 @@ function Dashboard() {
       style={{ background: "lightgray", minHeight: "100vh" }}
     >
       <HeaderDashboard path={path} />
-      {path === "home" && <Packages path={"home"} />}
+      {path === "home" && <FindTrack path={"home"} />}
       {path === "packages" && <Packages path={"packages"} />}
       {path === "used-tracking" && <UsedTracking />}
       {path === "tutorials" && <Tutorial />}
