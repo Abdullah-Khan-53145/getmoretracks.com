@@ -16,7 +16,9 @@
 }
 .input__data {
   display: flex;
+  gap: 0.5rem;
 }
+
 .input__data button {
   padding: 0 1.5rem;
 }
@@ -24,9 +26,21 @@
   padding: 0 1.5rem;
   background: rgb(87, 87, 175);
   color: white;
+  border: none;
 }
 .topcard__top__geo {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media (max-width: 820px) {
+  .top__geo__main {
+    padding: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 4rem;
+  }
+  .input__data input {
+    width: 100%;
+  }
 }

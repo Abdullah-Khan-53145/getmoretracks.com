@@ -48,6 +48,9 @@
 .find__tracks__card {
   width: 100%;
 }
+.find__tracks__card h2 {
+  color: rgb(87, 87, 175);
+}
 .find__tracks__top {
   display: flex;
   gap: 1.5rem;
